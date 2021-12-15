@@ -1,0 +1,207 @@
+<html>
+  <head>
+   <style>
+    * {background-color: rgb(200,200,200); }
+     #title {font-family:monospace;}
+     
+     .grid-container {
+       width: 500px;
+       display:grid;
+       grid-template-columns: auto auto auto auto auto;
+       grid-gap: 0px;
+       padding: 10px;
+       background-color:grey;}
+     .grid-item {
+       background-color: white;
+       font-family:monospace;
+       width: 100px;
+       height: 100px;
+    
+
+}
+     #pickertext{
+       background-color: rgb(200,200,200);
+       width:130px;
+       font-family:monospace;
+       font-size:15px;
+}
+     #instructions{
+       font-family:monospace;
+       font-size: 14px
+
+
+}
+</style>
+    <h1 id="title">
+      25 Pixels by hummus
+    </h1>
+    <p id="instructions">
+      <b>instructions for you smooth brains who didnt read the discord message: </b><br>
+ basically, you have 25 pixels to draw. your goal is to draw the given prompt. <br>
+everyone else is watching you draw, and theyll attempt to guess what you are drawing.
+
+      <br> when its not your turn, you try to guess the prompt.
+   
+    </p>
+    <div id ="pickertext">
+     color picker:
+    </div>
+    <div id = picker> 
+      <input type="color" id ="scolor" name ="picker" value ="gaming">
+
+    </div>
+     <div class="grid-container">
+  <div class="grid-item" id="cell1" onclick = "cellclicked(this)"></div>
+  <div class="grid-item" id="cell2" onclick = "cellclicked2(this)"></div>
+  <div class="grid-item" id="cell3" onclick = "cellclicked3(this)"></div>
+  <div class="grid-item" id="cell4" onclick = "cellclicked4(this)"></div>
+  <div class="grid-item" id="cell5" onclick = "cellclicked5(this)"></div>
+  <div class="grid-item" id="cell6" onclick = "cellclicked6(this)"></div>
+  <div class="grid-item" id="cell7" onclick = "cellclicked7(this)"></div>
+  <div class="grid-item" id="cell8" onclick = "cellclicked8(this)"></div>
+  <div class="grid-item" id="cell9" onclick = "cellclicked9(this)"></div>
+  <div class="grid-item" id="cell10" onclick = "cellclicked10(this)"></div>     
+  <div class="grid-item" id="cell11" onclick = "cellclicked11(this)"></div>
+  <div class="grid-item" id="cell12" onclick = "cellclicked12(this)"></div>
+  <div class="grid-item" id="cell13" onclick = "cellclicked13(this)"></div>   
+  <div class="grid-item" id="cell14" onclick = "cellclicked14(this)"></div>
+  <div class="grid-item" id="cell15" onclick = "cellclicked15(this)"></div>
+  <div class="grid-item" id="cell16" onclick = "cellclicked16(this)"></div>     
+  <div class="grid-item" id="cell17" onclick = "cellclicked17(this)"></div>
+  <div class="grid-item" id="cell18" onclick = "cellclicked18(this)"></div>
+  <div class="grid-item" id="cell19" onclick = "cellclicked19(this)"></div>
+  <div class="grid-item" id="cell20" onclick = "cellclicked20(this)"></div>     
+  <div class="grid-item" id="cell21" onclick = "cellclicked21(this)"></div>
+  <div class="grid-item" id="cell22" onclick = "cellclicked22(this)"></div>     
+  <div class="grid-item" id="cell23" onclick = "cellclicked23(this)"></div>
+  <div class="grid-item" id="cell24" onclick = "cellclicked24(this)"></div>
+  <div class="grid-item" id="cell25" onclick = "cellclicked25(this)"></div>
+    </div>
+
+  </head>
+  
+    <script>
+    var selected = "rgb(0,40,100)"; 
+     var promptarray = ["spider", "zombie", "milk", "cookie", "feces", "trash can", "face", "cannon", "banana", "apple", "rat",
+"car", "plane", "train","boat","rocket","planet", "water bottle", "toilet", "envelope", "television", "feather pen", "clock", 
+"whale", "shark", "lizard", "hummus", "goldfish", "fat goldfish", "skateboard", "bicycle", "scooter", "motorcycle", "moped", "segway",
+ "helicopter", "ocean", "lake", "rain", "desert", "arctic", "cucumber", "eggplant", "sushi", "music", "balance", "painting",
+"ninja turtle", "dart monkey", "the rock", "chandelier", "epic face","giant coc","squidward","spongebob","patrick","sonic",
+ "cat", "dog", "doge","nyan cat","gumball","robot", "discord","cheeto","wizard hat","tire","explosion","tree","bookshelf"]; 
+
+
+
+
+    var sinput;
+
+
+    sinput = document.querySelector("#scolor");  
+      
+
+    function cellclicked(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked2(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked3(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked4(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked5(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+
+    function cellclicked6(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked7(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked8(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked9(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+
+    function cellclicked10(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked11(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked12(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked13(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked14(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked15(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+
+    function cellclicked16(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked17(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked18(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked19(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+
+    function cellclicked20(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked21(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked22(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    
+    function cellclicked23(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked24(elmnt){
+    elmnt.style.backgroundColor = sinput.value;
+      
+    }
+    function cellclicked25(elmnt){
+    elmnt.style.backgroundColor = sinput.value;   
+    }
+
+</script>
+</html>
